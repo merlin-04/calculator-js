@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="calc">
+        <div id="content">
+            <div id="output">
+                <input type="text" id='result' placeholder="0" disabled>
+            </div>
+            <div class="btn">
+                <input onclick="displayContent('7')" type="button" value='7'>
+                <input onclick="displayContent('8')" type="button" value='8'>
+                <input onclick="displayContent('9')" type="button" value='9'>
+                <input onclick="displayContent('+')" type="button" value='+' id="clear">
+                <br>
+                <input onclick="displayContent('4')" type="button" value='4'>
+                <input onclick="displayContent('5')" type="button" value='5'>
+                <input onclick="displayContent('6')" type="button" value='6'>
+                <input onclick="displayContent('-')" type="button" value='-' id="clear">
+                <br>
+                <input onclick="displayContent('1')" type="button" value='1'>
+                <input onclick="displayContent('2')" type="button" value='2'>
+                <input onclick="displayContent('3')" type="button" value='3'>
+                <input onclick="displayContent('*')" type="button" value='*' id="clear">
+                <br>
+                <input onclick="removeContent()" type="button" value='AC'>
+                <input onclick="displayContent('0')" type="button" value='0'>
+                <input onclick="displayContent('/')" type="button" value='/'>
+                <input onclick="evaluvate()" type="button" value='=' id="clear">
+                <br>
+                <input onclick="backspaceContent()" type="button" value='X'>
+            </div>
+        </div>
+    </div>
+    <script src='./main.js'></script>
+</body>
+
+</html>
